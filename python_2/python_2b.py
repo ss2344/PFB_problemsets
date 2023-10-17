@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import sys
-string = sys.argv[1]
-count=int(string)
-print(type(count))
+count =int( sys.argv[1])
 #count=30
 if count<0:
   message= 'is negative'
