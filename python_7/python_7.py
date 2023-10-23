@@ -56,6 +56,7 @@ GTTGGGACCAATGGAGTTCGTGGTAACAGTACATCTTTCCCCTTGAATTTGCCATTCAAA
 ATTTGCGGTGGAATACCTAACAAATCCAGTGAATTTAAGAATTGCGATGGGTAATTGACA
 TGAATTCCAAGGTCAAATGCTAAGAGATAGTTTAATTTATGTTTGAGACAATCAATTCCC
 CAATTTTTCTAAGACTTCAATCAATCTCTTAGAATCCGCCTCTGGAGGTGCACTCAGCCG
+
 CACGTCGGGCTCACCAAATATGTTGGGGTTGTCGGTGAACTCGAATAGAAATTATTGTCG
 CCTCCATCTTCATGGCCGTGAAATCGGCTCGCTGACGGGCTTCTCGCGCTGGATTTTTTC
 ACTATTTTTGAATACATCATTAACGCAATATATATATATATATATTTAT')  
@@ -71,16 +72,16 @@ re_dict={}
 with open("re_file.txt" , "r") as file_obj:
   for line in file_obj:
     line=line.rstrip()
-    found=re.search(r"(^\w+\s[\W?\s?][\w\s]+[\W?\s?])(\D+)", line)
+    found=re.search(r"(^\w+\s+)([\W][\S]+[\W]\s+)?(\D+)$", line)
     if found:
-       print(f"{found.group(1)}{found.group(2)}", sep="\t")
-       re_name=found.group(1)
-       re_site=found.group(2)
-       re_name,re_site=line.split( )
-       re_name.append
-       re.site.append
+       print(f"{found.group(1)}{found.group(2)}{found.group(3)}", sep="\t")
+       re_name=found.group(1).rstrip()
+       re_site=found.group(3)
+       if found.group(2):
+         re_name2=found.group(2).rstrip().rstrip(')').lstrip('(')
+         re_name=re_name+','+re_name2
        re_dict[re_name]=re_site
-       print(re_dict)
+print(re_dict)
      
 # re_name=re_name.append
  #      re_site=re_site.append
