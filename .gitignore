@@ -15,3 +15,7 @@ NGS/gatk-4.3.0.0.zip
 NGS/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar
 NGS/gatk-4.3.0.0/gatk-package-4.3.0.0-spark.jar
 NGS/SRR21901339.fastq
+genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/ecoli.seqStore/blobs.0003
+genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/unitigging/ecoli.ctgStore/partition.0001
+genome_assembly_workshop//canu-2.2/bin/ecoli_filtered_0.60.fastq
+genome_assembly_workshop//canu-2.2/bin/pacbio.fastq
