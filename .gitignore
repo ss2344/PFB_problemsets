@@ -31,3 +31,7 @@ genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/ecoli.seqStore/blobs.0003
 genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/unitigging/ecoli.ctgStore/partition.0001
 genome_assembly_workshop//canu-2.2/bin/ecoli_filtered_0.60.fastq
 genome_assembly_workshop//canu-2.2/bin/pacbio.fastq
+genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/ecoli.seqStore/blobs.0003
+genome_assembly_workshop//canu-2.2/bin/ecoli-pacbio/unitigging/ecoli.ctgStore/partition.0001
+genome_assembly_workshop//canu-2.2/bin/ecoli_filtered_0.60.fastq
+genome_assembly_workshop//canu-2.2/bin/pacbio.fastq
